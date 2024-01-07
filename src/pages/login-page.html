@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <main
+      class="w-full h-screen grid grid-cols-2 text-color-dark leading-normal"
+    >
+      <div class="container flex flex-col justify-center items-center">
+        <div class="max-w-md flex flex-col justify-center items-center gap-y-6">
+          <div class="w-full flex flex-col justify-start leading-3">
+            <h1 class="font-bold leading-normal text-2xl mb-2">Sign in to</h1>
+            <h3 class="">Lorem ipsum dolor sit amet</h3>
+          </div>
+          <!-- INI INPUT -->
+          <div class="flex flex-col gap-3">
+            <label for="username" class="w-[424px] font-semibold"
+              >Username</label
+            >
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Masukan Username"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+            />
+          </div>
+          <div class="relative flex flex-col gap-3">
+            <label for="password" class="w-[424px] font-semibold"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Masukan Password"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+            />
+
+            <ion-icon
+              name="eye-off"
+              class="absolute text-xl top-[58px] right-4"
+            ></ion-icon>
+          </div>
+          <!-- INI INPUT -->
+          <button
+            class="w-full rounded-lg bg-color-stone text-light-100 py-4 mb-3"
+          >
+            Sign In
+          </button>
+          <div class="flex gap-1">
+            <h1>Belum punya akun?</h1>
+            <a href="/src/pages/register-page.html" class="font-bold"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end w-full h-full bg-light-400" />
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

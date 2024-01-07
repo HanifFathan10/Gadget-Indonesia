@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <main
+      class="w-full h-screen flex items-center text-color-dark leading-normal"
+    >
+      <div class="container flex flex-col justify-center items-center">
+        <h1 class="font-bold leading-normal text-5xl mb-8 text-center">
+          Lorem ipsum dolor sit amet
+        </h1>
+        <div class="max-w-xl flex flex-col justify-center items-center gap-y-6">
+          <div class="flex flex-col gap-3">
+            <label for="username" class="w-[424px] font-semibold"
+              >Username</label
+            >
+            <input
+              type="text"
+              name="username"
+              placeholder="Masukan Username"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col gap-3">
+            <label for="email" class="w-[424px] font-semibold">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Masukan Email"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+            />
+          </div>
+          <div class="relative flex flex-col gap-3">
+            <label for="email" class="w-[424px] font-semibold">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Masukan Password"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+            />
+
+            <ion-icon
+              name="eye-off"
+              class="absolute text-xl top-[58px] right-4"
+            ></ion-icon>
+          </div>
+          <div class="relative flex flex-col gap-3">
+            <label for="confirm-password" class="w-[424px] font-semibold"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              name="confirm-password"
+              placeholder="Masukan Confirm Password"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+            />
+            <ion-icon
+              name="eye-off"
+              class="absolute text-xl top-[58px] right-4"
+            ></ion-icon>
+          </div>
+          <div class="w-full flex justify-between items-center mb-3">
+            <div class="flex gap-2">
+              <input type="checkbox" name="checkbox" />
+              <label for="checkbox">Ingat Saya</label>
+            </div>
+            <h3>Lupa Passowrd ?</h3>
+          </div>
+          <button
+            class="w-full rounded-lg bg-color-stone text-light-100 py-4 mb-3"
+          >
+            Sign In
+          </button>
+          <div class="flex gap-1">
+            <h1>Sudah punya akun?</h1>
+            <a href="/src/pages/login-page.html" class="font-bold">Sign In</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end w-[501px] h-full bg-light-500" />
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
