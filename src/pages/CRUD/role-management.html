@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/output.css" />
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <nav
+      class="flex justify-center items-center text-color-dark bg-light-200 overflow-y-hidden"
+    >
+      <div class="container flex justify-between items-center my-5">
+        <div class="">
+          <img
+            src="/public/images/gadget-indo-logo.png"
+            alt="tect"
+            width="60"
+            height="60"
+            class="rounded-full bg-cover bg-center"
+          />
+        </div>
+        <div class="flex gap-8">
+          <a href="">Brand</a>
+          <a href="">unknown</a>
+          <a href="">unknown</a>
+          <a href="">unknown</a>
+          <a href="">About Us</a>
+        </div>
+        <div>
+          <button class="px-8 py-3 rounded-md border-2 border-color-dark">
+            SIgn In
+          </button>
+          <button class="px-8 py-3 rounded-md bg-color-stone text-light-100">
+            Join Now
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START DASHBOARD PHONE -->
+    <section class="w-full flex gap-3">
+      <!-- SIDE BAR -->
+      <div
+        class="w-80 h-[1024px] px-8 py-6 flex flex-col justify-between border-r border-light-300"
+      >
+        <div class="flex flex-col justify-start p-2">
+          <!-- PROFILE -->
+          <div class="flex gap-2 mb-11">
+            <img
+              src="../../../public/images/gadget-indo-logo.png"
+              alt="logo"
+              width="56"
+              height="56"
+            />
+            <div class="flex flex-col">
+              <h1 class="font-bold">Admin</h1>
+              <h3>admin@gmail.com</h3>
+            </div>
+          </div>
+          <!-- PROFILE -->
+
+          <!-- INPUT -->
+          <div
+            class="flex p-4 justify-center items-center bg-light-300 rounded-lg gap-4 mb-11"
+          >
+            <ion-icon name="search-outline" class="text-xl"></ion-icon>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Cari..."
+              class="bg-light-300"
+            />
+          </div>
+          <!-- INPUT -->
+
+          <!-- MENU -->
+          <div class="flex flex-col gap-5">
+            <div class="flex flex-col">
+              <div class="flex gap-10 items-center p-3">
+                <div class="w-6 h-6 rounded-full bg-color-dark"></div>
+                <h1 class="text-lg">Dashboard</h1>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-2xl"
+                ></ion-icon>
+              </div>
+              <div class="flex gap-8 justify-end p-3">
+                <div class="w-6 h-6 rounded-full bg-color-dark"></div>
+                <h1 class="text-lg">Sub-Menu</h1>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-2xl"
+                ></ion-icon>
+              </div>
+              <div class="flex gap-6 justify-center p-3">
+                <div class="w-5 h-5 rounded-full bg-color-dark"></div>
+                <h1 class="text-lg">Sub-Menu</h1>
+              </div>
+              <div class="flex gap-8 justify-end p-3">
+                <div class="w-6 h-6 rounded-full bg-color-dark"></div>
+                <h1 class="text-lg">Sub-Menu</h1>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-2xl"
+                ></ion-icon>
+              </div>
+            </div>
+            <div class="flex gap-10 items-center p-3">
+              <div class="w-6 h-6 rounded-full bg-color-dark"></div>
+              <h1 class="text-lg">Phone</h1>
+            </div>
+            <div class="flex gap-10 items-center p-3">
+              <div class="w-6 h-6 rounded-full bg-color-dark"></div>
+              <h1 class="text-lg">Brand</h1>
+            </div>
+            <div class="flex gap-10 items-center p-3">
+              <div class="w-6 h-6 rounded-full bg-color-dark"></div>
+              <h1 class="text-[16px]">Role Management</h1>
+            </div>
+            <div class="flex gap-10 items-center p-3">
+              <div class="w-6 h-6 rounded-full bg-color-dark"></div>
+              <h1 class="text-[16px]">Menu Management</h1>
+            </div>
+          </div>
+          <!-- MENU -->
+        </div>
+        <div class="flex items-center gap-3 p-4">
+          <ion-icon name="log-in-outline" class="text-2xl"></ion-icon>
+          <a href="" class="font-semibold">Logout</a>
+        </div>
+      </div>
+      <!-- SIDE BAR -->
+
+      <!-- MAIN DASHBOARD -->
+      <main class="w-full px-6 py-8">
+        <div class="grid grid-cols-2 border border-light-300 rounded-t-3xl">
+          <h1 class="p-3 text-center font-bold text-[19px]">Roles Data</h1>
+          <h1
+            class="p-3 text-center font-bold text-[19px] border-b border-light-500"
+          >
+            Role Management
+          </h1>
+        </div>
+        <!-- START ACTION -->
+        <section class="flex flex-col py-2 border font-bold border-light-300">
+          <div class="flex items-center text-[16px]">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <h1 class="py-[10px] px-3 w-[184px]">User</h1>
+              <h1 class="py-[10px] px-3 w-[184px]">Admin</h1>
+            </div>
+          </div>
+          <div
+            class="flex items-center text-[16px] bg-light-300 px-16 py-4 gap-3"
+          >
+            <div class="w-4 h-4 rounded-full bg-light-500"></div>
+            <h1>Menu Access</h1>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px] border-b border-light-300">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center text-[16px]">
+            <h1 class="w-full px-16">Actions</h1>
+            <div class="flex justify-center text-center">
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="py-[10px] px-3 w-[184px] flex justify-center items-center gap-3"
+              >
+                <ion-icon
+                  name="checkbox-outline"
+                  class="cursor-pointer text-3xl"
+                ></ion-icon>
+                <button
+                  class="h-[26px] w-[26px] flex justify-center items-center rounded-md bg-light-500"
+                >
+                  <ion-icon
+                    name="link-outline"
+                    class="cursor-pointer text-xl text-light-100"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END ACTION -->
+      </main>
+      <!-- MAIN DASHBOARD -->
+    </section>
+    <!-- END DASHBOARD PHONE -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
