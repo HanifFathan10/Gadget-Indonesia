@@ -8,7 +8,7 @@
   </head>
   <body class="scroll-smooth">
     <!-- START NAVBAR -->
-    <nav class="flex justify-center items-center text-color-dark bg-light-200">
+    <nav class="flex justify-center items-center text-color-dark bg-light-100">
       <div class="container flex justify-between items-center my-5">
         <div class="">
           <img
@@ -30,7 +30,7 @@
           <button class="px-8 py-3 rounded-md border-2 border-color-dark">
             SIgn In
           </button>
-          <button class="px-8 py-3 rounded-md bg-color-stone text-light-100">
+          <button class="px-8 py-3 rounded-md bg-color-primary text-light-100">
             Join Now
           </button>
         </div>
@@ -39,7 +39,7 @@
     <!-- END NAVBAR -->
 
     <!-- START HERO SECTION -->
-    <main class="w-full flex justify-center items-center bg-light-400">
+    <main class="w-full flex justify-center items-center bg-light-100">
       <div
         class="flex justify-center items-center mx-32 my-28 gap-20 text-color-dark"
       >
@@ -51,12 +51,35 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
           <button
-            class="bg-light-100 px-8 py-4 font-semibold rounded-sm w-44 h-14 text-color-dark border"
+            class="bg-light-100 px-10 py-4 font-semibold rounded-xl w-44 h-14 text-color-dark border"
           >
             Get Started
           </button>
         </div>
-        <div class="w-[456px] h-[456px] bg-light-500 shrink-0" />
+        <section class="grid grid-cols-2 place-content-center w-full h-full">
+          <div class="relative text-center w-[200px] h-[200px] place-self-end">
+            <div
+              class="absolute bottom-0 w-full h-1/2 place-self-end bg-color-primary"
+            ></div>
+          </div>
+          <div
+            class="relative bg-color-red w-[200px] h-[200px] overflow-hidden"
+          >
+            <div
+              class="absolute w-[380px] h-[380px] top-0 left-0 rounded-full bg-light-100"
+            ></div>
+          </div>
+          <div
+            class="bg-color-dark w-[200px] h-[200px] flex justify-center items-center place-self-end"
+          >
+            <div class="w-[150px] h-[150px] rounded-full bg-light-100"></div>
+          </div>
+          <div
+            class="bg-color-primary w-[200px] h-[200px] flex justify-center items-center"
+          >
+            <div class="w-[150px] h-[150px] rounded-full bg-color-grey"></div>
+          </div>
+        </section>
       </div>
     </main>
     <!-- END HERO SECTION -->

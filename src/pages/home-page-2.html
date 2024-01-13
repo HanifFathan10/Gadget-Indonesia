@@ -8,7 +8,7 @@
   </head>
   <body class="scroll-smooth">
     <!-- START NAVBAR -->
-    <nav class="flex justify-center items-center text-color-dark bg-light-200">
+    <nav class="flex justify-center items-center text-color-dark bg-light-100">
       <div class="container flex justify-between items-center my-5">
         <div class="">
           <img
@@ -30,7 +30,7 @@
           <button class="px-8 py-3 rounded-md border-2 border-color-dark">
             SIgn In
           </button>
-          <button class="px-8 py-3 rounded-md bg-color-stone text-light-100">
+          <button class="px-8 py-3 rounded-md bg-color-primary text-light-100">
             Join Now
           </button>
         </div>
@@ -39,9 +39,9 @@
     <!-- END NAVBAR -->
 
     <!-- START HERO SECTION -->
-    <main class="w-full flex justify-center items-center bg-light-400">
+    <main class="w-full flex justify-center items-center bg-color-primary">
       <div
-        class="flex justify-center items-center mx-32 my-28 gap-20 text-color-dark"
+        class="flex justify-center items-center mx-32 my-28 gap-20 text-light-100"
       >
         <div class="inline-flex flex-col justify-center">
           <h1 class="text-[46px] leading-normal font-bold mb-7">
@@ -51,7 +51,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
           <button
-            class="bg-light-100 px-8 py-4 font-semibold rounded-sm w-44 h-14 text-color-dark border"
+            class="bg-light-100 px-8 py-4 font-semibold rounded-lg w-44 h-14 text-color-primary border"
           >
             Get Started
           </button>
@@ -67,17 +67,45 @@
     >
       <!-- START CAROUSEL BRAND -->
       <div class="relative w-full grid grid-cols-4 gap-4 mb-14">
-        <div class="px-8 py-12 w-full h-32 bg-light-400">
-          <h1 class="font-bold text-xl text-center">BRAND #1</h1>
+        <div class="w-full h-32 overflow-hidden shadow-md rounded-md">
+          <img
+            src="/public/images/iphone.webp"
+            alt="iphone"
+            width="26"
+            height="26"
+            fetchpriority="high"
+            class="w-full h-full bg-cover bg-no-repeat bg-center aspect-auto object-contain"
+          />
         </div>
-        <div class="px-8 py-12 w-full h-32 bg-light-400">
-          <h1 class="font-bold text-xl text-center">BRAND #2</h1>
+        <div class="w-full h-32 overflow-hidden shadow-md rounded-md">
+          <img
+            src="/public/images/samsung.webp"
+            alt=""
+            width="26"
+            height="26"
+            fetchpriority="high"
+            class="w-full h-full bg-cover bg-no-repeat bg-center aspect-auto object-contain"
+          />
         </div>
-        <div class="px-8 py-12 w-full h-32 bg-light-400">
-          <h1 class="font-bold text-xl text-center">BRAND #3</h1>
+        <div class="w-full h-32 overflow-hidden shadow-md rounded-md">
+          <img
+            src="/public/images/xiaomi.webp"
+            alt=""
+            width="26"
+            height="26"
+            fetchpriority="high"
+            class="w-full h-full bg-cover bg-no-repeat bg-center aspect-auto object-contain"
+          />
         </div>
-        <div class="px-8 py-12 w-full h-32 bg-light-400">
-          <h1 class="font-bold text-xl text-center">BRAND #4</h1>
+        <div class="w-full h-32 overflow-hidden shadow-md rounded-md">
+          <img
+            src="/public/images/vivo.webp"
+            alt=""
+            width="26"
+            height="26"
+            fetchpriority="high"
+            class="w-full h-full bg-cover bg-no-repeat bg-center"
+          />
         </div>
         <ion-icon
           name="chevron-back-outline"
@@ -158,9 +186,10 @@
 
       <!-- START CARD BRAND -->
       <div class="w-full h-full grid grid-cols-5 gap-4">
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -170,22 +199,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
-              Detail
+              <a href="/src/pages/gadget-detail-page.html"> Detail </a>
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -195,22 +227,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -220,22 +255,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -245,22 +283,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -270,22 +311,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -295,22 +339,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -320,22 +367,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -345,22 +395,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -370,22 +423,25 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start shadow-lg rounded-xl">
           <div
-            class="w-full h-[272px] bg-light-500 rounded-t-2xl flex flex-col p-3 justify-end"
+            class="w-full h-[272px] bg-no-repeat bg-cover bg-center rounded-t-2xl flex flex-col p-3 justify-end text-light-500 shadow-md"
+            style="background-image: url('/public/images/asus.webp')"
           >
             <h1 class="text-[16px] font-bold leading-normal">
               Asus ROG Phone 6 Batman Edition
@@ -395,16 +451,18 @@
               4.8
             </p>
           </div>
-          <div class="w-full grid grid-cols-2">
+          <div
+            class="w-full grid grid-cols-2 border border-color-primary rounded-b-2xl"
+          >
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-300 rounded-es-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-light-100 text-color-primary"
             >
               Detail
             </button>
             <button
-              class="px-6 py-10 flex justify-center items-center bg-light-200 rounded-ee-2xl"
+              class="px-6 py-4 place-self-center font-bold items-center bg-color-primary rounded-ee-2xl w-full text-light-100"
             >
-              Compere
+              Compare
             </button>
           </div>
         </div>
