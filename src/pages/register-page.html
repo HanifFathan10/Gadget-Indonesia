@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
     <link rel="stylesheet" href="../css/output.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <main
       class="w-full h-screen flex items-center text-color-dark leading-normal"
     >
+      <!-- LEFT CONTENT -->
       <div class="container flex flex-col justify-center items-center">
         <h1 class="font-bold leading-normal text-5xl mb-8 text-center">
           Lorem ipsum dolor sit amet
         </h1>
-        <div class="max-w-xl flex flex-col justify-center items-center gap-y-6">
+        <form
+          action=""
+          id=""
+          class="max-w-xl flex flex-col justify-center items-center gap-y-6"
+        >
+          <!-- START INPUT USERNAME -->
           <div class="flex flex-col gap-3">
             <label for="username" class="w-[424px] font-semibold"
               >Username</label
@@ -23,32 +30,37 @@
               type="text"
               name="username"
               placeholder="Masukan Username"
-              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg border-light-400"
             />
           </div>
+          <!-- END INPUT USERNAME -->
+          <!-- START INPUT EMAIL -->
           <div class="flex flex-col gap-3">
             <label for="email" class="w-[424px] font-semibold">Email</label>
             <input
               type="email"
               name="email"
               placeholder="Masukan Email"
-              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg border-light-400"
             />
           </div>
+          <!-- END INPUT EMAIL -->
+          <!-- START INPUT PASSOWRD -->
           <div class="relative flex flex-col gap-3">
             <label for="email" class="w-[424px] font-semibold">Password</label>
             <input
               type="password"
               name="password"
               placeholder="Masukan Password"
-              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg border-light-400"
             />
 
-            <ion-icon
-              name="eye-off"
-              class="absolute text-xl top-[58px] right-4"
-            ></ion-icon>
+            <i
+              class="ph-fill ph-eye-slash text-[20px] absolute right-7 top-14"
+            ></i>
           </div>
+          <!-- END INPUT PASSOWRD -->
+          <!-- START INPUT CONFIRM PASSOWRD -->
           <div class="relative flex flex-col gap-3">
             <label for="confirm-password" class="w-[424px] font-semibold"
               >Confirm Password</label
@@ -57,33 +69,26 @@
               type="password"
               name="confirm-password"
               placeholder="Masukan Confirm Password"
-              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
+              class="w-[424px] h-14 px-3 py-4 border rounded-lg border-light-400"
             />
-            <ion-icon
-              name="eye-off"
-              class="absolute text-xl top-[58px] right-4"
-            ></ion-icon>
+            <i
+              class="ph-fill ph-eye-slash text-[20px] absolute right-7 top-14"
+            ></i>
           </div>
-          <button
-            class="w-full rounded-lg bg-color-stone text-light-100 py-4 mb-3"
-          >
+          <!-- END INPUT CONFIRM PASSOWRD -->
+          <button class="w-full rounded-lg bg-color-stone text-light-100 py-4">
             Sign In
           </button>
-          <div class="flex gap-1">
-            <h1>Sudah punya akun?</h1>
-            <a href="/src/pages/login-page.html" class="font-bold">Sign Up</a>
-          </div>
+        </form>
+        <div class="flex gap-1 mt-[52px]">
+          <h1>Sudah punya akun?</h1>
+          <a href="/src/pages/login-page.html" class="font-bold">Login</a>
         </div>
       </div>
+      <!-- LEFT CONTENT -->
+      <!-- RIGHT CONTENT -->
       <div class="flex justify-end w-[501px] h-full bg-light-500" />
+      <!-- RIGHT CONTENT -->
     </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>

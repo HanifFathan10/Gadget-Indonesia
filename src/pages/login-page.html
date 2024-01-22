@@ -5,70 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="../css/output.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <main
       class="w-full h-screen grid grid-cols-2 text-color-dark leading-normal"
     >
-      <div class="container flex flex-col justify-center items-center">
-        <div class="max-w-md flex flex-col justify-center items-center gap-y-6">
+      <!-- START LEFT CONTENT -->
+      <section class="container flex flex-col justify-center items-center">
+        <div
+          class="max-w-md flex flex-col justify-between gap-y-[52px] items-center"
+        >
           <div class="w-full flex flex-col justify-start leading-3">
             <h1 class="font-bold leading-normal text-2xl mb-2">Sign in to</h1>
-            <h3 class="">Lorem ipsum dolor sit amet</h3>
+            <h3 class="font-semibold">Lorem ipsum dolor sit amet</h3>
           </div>
-          <!-- INI INPUT -->
-          <div class="flex flex-col gap-3">
-            <label for="username" class="w-[424px] font-semibold"
-              >Username</label
+          <form class="flex flex-col gap-y-8" action="" id="">
+            <!-- START INPUT USERNAME -->
+            <div class="flex flex-col gap-3">
+              <label for="username" class="w-[424px] font-semibold"
+                >Username</label
+              >
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Masukan Username"
+                class="w-[424px] h-14 px-3 py-4 border rounded-lg border-light-400"
+              />
+            </div>
+            <!-- END INPUT USERNAME -->
+            <!-- START INPUT PASSOWRD -->
+            <div class="relative flex flex-col gap-3">
+              <label for="password" class="w-[424px] font-semibold"
+                >Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Masukan Password"
+                class="w-[424px] h-14 px-3 py-4 border rounded-lg border-light-400"
+              />
+              <i
+                class="ph-fill ph-eye-slash text-[20px] absolute right-7 top-14"
+              ></i>
+            </div>
+            <!-- END INPUT PASSOWRD -->
+            <!-- START CHECKBOX -->
+            <div class="w-full flex justify-between items-center">
+              <div class="flex justify-center gap-x-[11px]">
+                <input type="checkbox" id="ingat-saya" />
+                <h4>Ingat Saya</h4>
+              </div>
+              <a href="#">
+                <h1>Lupa password ?</h1>
+              </a>
+            </div>
+            <!-- END CHECKBOX -->
+            <button
+              class="w-full rounded-lg bg-color-stone text-light-100 py-4 mb-3"
             >
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Masukan Username"
-              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
-            />
-          </div>
-          <div class="relative flex flex-col gap-3">
-            <label for="password" class="w-[424px] font-semibold"
-              >Password</label
-            >
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Masukan Password"
-              class="w-[424px] h-14 px-3 py-4 border rounded-lg"
-            />
-
-            <ion-icon
-              name="eye-off"
-              class="absolute text-xl top-[58px] right-4"
-            ></ion-icon>
-          </div>
-          <!-- INI INPUT -->
-          <button
-            class="w-full rounded-lg bg-color-stone text-light-100 py-4 mb-3"
-          >
-            Sign In
-          </button>
+              Sign In
+            </button>
+          </form>
           <div class="flex gap-1">
             <h1>Belum punya akun?</h1>
             <a href="/src/pages/register-page.html" class="font-bold"
-              >Sign Up</a
+              >Daftar Akun</a
             >
           </div>
         </div>
-      </div>
-      <div class="flex justify-end w-full h-full bg-light-400" />
+      </section>
+      <!-- END LEFT CONTENT -->
+      <!-- START RIGHT CONTENT -->
+      <section class="flex justify-end w-full h-full bg-light-400" />
+      <!-- END RIGHT CONTENT -->
     </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
